@@ -1,0 +1,38 @@
+.logo{
+    border-radius: 50px;
+    width: 150px;
+}
+
+.contenedorbanner{
+    position: relative;
+    width: 100%;
+}
+.mensajebanner{
+    position: absolute;
+    text-align: center;
+    margin-top: 10%;
+    padding: 5px;
+    background-color: lightcyan;
+    width: 95%;
+    opacity: 0.5;
+    font-weight: normal;
+}
+.recomendaciones{
+    background-color:white;
+    border-style: groove;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 0px;
+}
+.banner{
+    height: 120vh;
+    width: 100%;
+}
+.presentacion img{
+    height: 350px;
+    width: 250px;
+}
+
+
+

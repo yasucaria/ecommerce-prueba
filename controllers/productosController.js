@@ -1,14 +1,19 @@
 const fs = require('fs');
-const detalleProductos = JSON.parse(fs.readFileSync('./site/detalleProductos.json', 'utf-8'));
+const listadoProductos = JSON.parse(fs.readFileSync('./data/detalleProductos.json', 'utf-8'));
 
 const productosController = {
 listado: function(req, res){
-    res.send(detalleProductos);
+    res.render("listadoProductos", {title: "Listado de productos"});
 },
 detalle: function(req, res){
-    res.send("Este es el detalle de productos");
+    res.render("detalle", {title: "Detalle de productos"});
+},
+agregar: function(req, res){
+    res.render("agregar", {title: "Formulario de producto"})
 }
-}
+};
+
+module.exports= "productosController"
 
 
 
